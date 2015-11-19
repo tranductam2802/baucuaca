@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/table"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_frame">
+
+            <TextView
+                android:id="@+id/tvTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/bg_view"
+                android:text="400" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/phinh" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/sound"
+            android:text="@null" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:text="00:03:00"
+            android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/gvBanCo"
+            android:layout_width="wrap_content"
+            android:layout_height="232dp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp">
+
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/xingau1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/dice" />
+
+        <ImageView
+            android:id="@+id/xingau2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dice" />
+
+        <ImageView
+            android:id="@+id/xingau3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dice" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLacXiNgau"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_start"
+        android:onClick="roleDice"
+        android:text="@null" />
+
+    <TextView
+        android:id="@+id/bonus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="35dp"
+        android:textSize="16dp" />
+
+</LinearLayout>
